@@ -4,21 +4,21 @@ namespace SharedCalc
 {
     public static class Calculator
     {
-        public static double Add(double left, double right)
+        public static float Add(float left, float right)
         {
             return left + right;
         }
-        public static double Sub(double left, double right)
+        public static float Sub(float left, float right)
         {
             return left - right;
         }
 
-        public static double Mul(double left, double right)
+        public static float Mul(float left, float right)
         {
             return left * right;
         }
 
-        public static double Div(double left, double right)
+        public static float Div(float left, float right)
         {
             return left / right;
         }

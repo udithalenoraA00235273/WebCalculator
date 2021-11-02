@@ -22,7 +22,7 @@ namespace WebCalc.Pages
 
         }
 
-        public void OnPost([FromForm]double left, [FromForm]double right)
+        public void OnPost([FromForm]float left, [FromForm]float right)
         {
             ViewData["result"] = SharedCalc.Calculator.Add(left, right);
             ViewData["result1"] = SharedCalc.Calculator.Sub(left, right);

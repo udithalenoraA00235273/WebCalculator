@@ -9,9 +9,9 @@ namespace TestCalc
         [DataTestMethod]
         [DataRow(1, 1, 2)]
         [DataRow(2, 2, 4)]
-        public void CalculatorAddMethod(double left, double right, double expected)
+        public void CalculatorAddMethod(float left, float right, float expected)
         {
-            double result;
+            float result;
             result = Calculator.Add(left, right);
             Assert.AreEqual(expected, result);
 
@@ -21,9 +21,9 @@ namespace TestCalc
         [DataRow(2, 0, 2)]
         [DataRow(2, 0, 2)]
 
-        public void CalculatorSubMethod(double left, double right, double expected)
+        public void CalculatorSubMethod(float left, float right, float expected)
         {
-            double result1;
+            float result1;
             result1 = Calculator.Sub(left, right);
             Assert.AreEqual(expected, result1);
 
@@ -32,9 +32,9 @@ namespace TestCalc
         [DataTestMethod]
         [DataRow(2, 1, 2)]
         [DataRow(2, 1, 2)]
-        public void CalculatorMultiplyMethod(double left, double right, double expected)
+        public void CalculatorMultiplyMethod(float left, float right, float expected)
         {
-            double result2;
+            float result2;
             result2 = Calculator.Mul(left, right);
             Assert.AreEqual(expected, result2);
 
@@ -43,9 +43,9 @@ namespace TestCalc
         [DataTestMethod]
         [DataRow(2, 1, 2)]
         [DataRow(2, 1, 2)]
-        public void CalculatorDivideMethod(double left, double right, double expected)
+        public void CalculatorDivideMethod(float left, float right, float expected)
         {
-            double result3;
+            float result3;
             result3 = Calculator.Div(left, right);
             Assert.AreEqual(expected, result3);
 
