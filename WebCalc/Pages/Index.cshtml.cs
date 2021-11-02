@@ -21,5 +21,15 @@ namespace WebCalc.Pages
         {
 
         }
+
+        public void OnPost([FromForm]double left, [FromForm]double right)
+        {
+            ViewData["result"] = SharedCalc.Calculator.Add(left, right);
+            ViewData["result1"] = SharedCalc.Calculator.Sub(left, right);
+            ViewData["result2"] = SharedCalc.Calculator.Mul(left, right);
+            ViewData["result3"] = SharedCalc.Calculator.Div(left, right);
+        }
+
+       
     }
 }

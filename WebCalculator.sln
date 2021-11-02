@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedCalc", "SharedCalc\Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCalc", "TestCalc\TestCalc.csproj", "{DAEC0F52-B837-4915-8C14-7942C2A3CC67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCalcIntegration", "TestCalcIntegration\TestCalcIntegration.csproj", "{66711B4B-02EB-4756-A37E-9A25776ADB1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DAEC0F52-B837-4915-8C14-7942C2A3CC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAEC0F52-B837-4915-8C14-7942C2A3CC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAEC0F52-B837-4915-8C14-7942C2A3CC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66711B4B-02EB-4756-A37E-9A25776ADB1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66711B4B-02EB-4756-A37E-9A25776ADB1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66711B4B-02EB-4756-A37E-9A25776ADB1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66711B4B-02EB-4756-A37E-9A25776ADB1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
