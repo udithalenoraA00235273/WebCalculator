@@ -37,6 +37,60 @@ namespace TestCalcIntegration
             Assert.AreEqual(2.ToString(), output.Text);
         }
 
+        [DataTestMethod]
+        public void TestWebsiteSubs()
+        {
+
+            _driver.Navigate().GoToUrl("https://localhost:5000/");
+
+            var left = _driver.FindElement(By.CssSelector("input[name=left]"));
+            var right = _driver.FindElement(By.CssSelector("input[name=right]"));
+            var form = _driver.FindElement(By.CssSelector("form"));
+
+            left.SendKeys("1");
+            right.SendKeys("1");
+            form.Submit();
+
+            var output = _driver.FindElement(By.CssSelector("output"));
+            Assert.AreEqual(2.ToString(), output.Text);
+        }
+
+        [DataTestMethod]
+        public void TestWebsiteMulty()
+        {
+
+            _driver.Navigate().GoToUrl("https://localhost:5000/");
+
+            var left = _driver.FindElement(By.CssSelector("input[name=left]"));
+            var right = _driver.FindElement(By.CssSelector("input[name=right]"));
+            var form = _driver.FindElement(By.CssSelector("form"));
+
+            left.SendKeys("1");
+            right.SendKeys("1");
+            form.Submit();
+
+            var output = _driver.FindElement(By.CssSelector("output"));
+            Assert.AreEqual(2.ToString(), output.Text);
+        }
+
+        [DataTestMethod]
+        public void TestWebsiteDivide()
+        {
+
+            _driver.Navigate().GoToUrl("https://localhost:5000/");
+
+            var left = _driver.FindElement(By.CssSelector("input[name=left]"));
+            var right = _driver.FindElement(By.CssSelector("input[name=right]"));
+            var form = _driver.FindElement(By.CssSelector("form"));
+
+            left.SendKeys("1");
+            right.SendKeys("1");
+            form.Submit();
+
+            var output = _driver.FindElement(By.CssSelector("output"));
+            Assert.AreEqual(2.ToString(), output.Text);
+        }
+
         [TestCleanup]
         public void ShutDown()
         {

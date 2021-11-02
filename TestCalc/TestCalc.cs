@@ -17,6 +17,10 @@ namespace TestCalc
 
         }
 
+        [DataTestMethod]
+        [DataRow(2, 0, 2)]
+        [DataRow(2, 0, 2)]
+
         public void CalculatorSubMethod(double left, double right, double expected)
         {
             double result1;
@@ -25,6 +29,9 @@ namespace TestCalc
 
         }
 
+        [DataTestMethod]
+        [DataRow(2, 1, 2)]
+        [DataRow(2, 1, 2)]
         public void CalculatorMultiplyMethod(double left, double right, double expected)
         {
             double result2;
@@ -32,6 +39,10 @@ namespace TestCalc
             Assert.AreEqual(expected, result2);
 
         }
+
+        [DataTestMethod]
+        [DataRow(2, 1, 2)]
+        [DataRow(2, 1, 2)]
         public void CalculatorDivideMethod(double left, double right, double expected)
         {
             double result3;
